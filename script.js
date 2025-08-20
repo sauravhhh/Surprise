@@ -1,4 +1,4 @@
-// Butterfly image SVG
+// Butterfly SVG image used as innerHTML for butterfly divs
 const butterflySVG = `
   <svg viewBox="0 0 48 44" fill="none" xmlns="http://www.w3.org/2000/svg">
     <ellipse cx="12" cy="16" rx="12" ry="16" fill="#fed6f2"/>
@@ -11,19 +11,18 @@ const butterflySVG = `
   </svg>
 `;
 
-function randomButterfly(i) {
+function createButterfly() {
   const el = document.createElement('div');
   el.className = 'butterfly';
-  el.style.left = Math.random()*98 + 'vw';
-  el.style.top = (Math.random()*80+5) + 'vh';
-  el.style.animationDuration = `${4.5 + Math.random()*2.5}s`;
-  el.style.transform += ` rotate(${Math.random()*360}deg) scale(${0.85 + Math.random()*0.4})`;
-  el.style.zIndex = 0;
+  el.style.left = Math.random() * 98 + 'vw';
+  el.style.top = Math.random() * 80 + 5 + 'vh';
+  el.style.animationDuration = (4.5 + Math.random() * 2.5) + 's';
+  el.style.transform = `rotate(${Math.random() * 360}deg) scale(${0.85 + Math.random() * 0.4})`;
   el.innerHTML = butterflySVG;
   return el;
 }
 
-// Generate 15 butterflies
-for(let i=0; i<15; i++) {
-  document.body.appendChild(randomButterfly(i));
-}
+// Add 15 butterflies to the body
+for (let i = 0; i < 15; i++) {
+  document.body.appendChild(createButterfly());
+  }
