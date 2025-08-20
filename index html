@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Surprise Love Letter 🦋</title>
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -13,7 +14,7 @@
       This little surprise is just a reminder of how special you are to me. Every day with you is like a new spring, full of hope, beauty, and gentle joy.
     </p>
     <p>
-      <b>I love you—today, tomorrow, always.</b>
+      <strong>I love you—today, tomorrow, always.</strong>
     </p>
     <p style="color:#5151c6;">🦋</p>
     <p style="font-size:0.95em; color:#888;">(Refresh for more butterflies!)</p>
